@@ -20,8 +20,8 @@ class _MainFoodPageState extends State<MainFoodPage> {
           // Cabecera
           Container(
             child: Container(
-              margin: EdgeInsets.only(top: 45, bottom: 15),
-              padding: EdgeInsets.only(left: 20, right: 20),
+              margin: EdgeInsets.only(top: Dimensions.height45, bottom: Dimensions.height15),
+              padding: EdgeInsets.only(left: Dimensions.width20, right: Dimensions.width20),
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -50,7 +50,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                           color: Colors.white,
                         ),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                          borderRadius: BorderRadius.circular(Dimensions.radius15),
                           color: AppColors.mainColor,
                         ))
                   ]),

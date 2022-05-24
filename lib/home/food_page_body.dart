@@ -98,9 +98,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         children: [
           Container(
               height: Dimensions.pageViewContainer,
-              margin: EdgeInsets.only(left: 10, right: 10),
+              margin: EdgeInsets.only(left: Dimensions.width10, right: Dimensions.width10),
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(Dimensions.radius30),
                   color: index.isEven ? Color(0xFF69c5df) : Color(0xFF9294cc),
                   image: DecorationImage(
                     image: AssetImage('assets/image/pizza.jpg'),
@@ -110,9 +110,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             alignment: Alignment.bottomCenter,
             child: Container(
               height: 120,
-              margin: EdgeInsets.only(left: 30, right: 30, bottom: 30),
+              margin: EdgeInsets.only(left: Dimensions.width30, right: Dimensions.width30, bottom: Dimensions.height30),
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(Dimensions.radius20),
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
@@ -126,12 +126,12 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                     BoxShadow(color: Colors.white, offset: Offset(5, 0))
                   ]),
               child: Container(
-                padding: EdgeInsets.only(top: 15, left: 15, right: 15),
+                padding: EdgeInsets.only(top: Dimensions.height15, left: 15, right: 15),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       BigText(text: "Yapingacho"),
-                      SizedBox(height: 10),
+                      SizedBox(height: Dimensions.height10),
                       Row(
                         children: [
                           Wrap(
@@ -158,7 +158,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                         ],
                       ),
                       SizedBox(
-                        height: 20,
+                        height: Dimensions.height20,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
