@@ -4,8 +4,11 @@ import 'package:flutter_ecommerce/pages/home/food/recommended_food_detail.dart';
 //import 'package:flutter_ecommerce/home/main_food_page.dart';
 import 'package:flutter_ecommerce/pages/home/main_food_page.dart';
 import 'package:get/get.dart';
+import 'helper/dependencias.dart' as dep;
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dep.init();
   runApp(const MyApp());
 }
 
