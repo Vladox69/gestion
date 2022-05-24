@@ -4,6 +4,8 @@ import 'package:flutter_ecommerce/utils/colors.dart';
 import 'package:flutter_ecommerce/widgets/big_text.dart';
 import 'package:flutter_ecommerce/widgets/small_text.dart';
 
+import '../utils/dimensions.dart';
+
 class MainFoodPage extends StatefulWidget {
   const MainFoodPage({Key? key}) : super(key: key);
 
