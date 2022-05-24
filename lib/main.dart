@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce/home/main_food_page.dart';
+import 'package:flutter_ecommerce/pages/home/food/popular_food_detal.dart';
+import 'package:flutter_ecommerce/pages/home/food/recommended_food_detail.dart';
+//import 'package:flutter_ecommerce/home/main_food_page.dart';
+import 'package:flutter_ecommerce/pages/home/main_food_page.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -27,7 +30,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MainFoodPage(),
+      home: RecommendedFoodDetail(),
     );
   }
 }
